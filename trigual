@@ -1,0 +1,23 @@
+HAND_SIZE = 8
+SCRABBLE_LETTER_VALUES = {
+    'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f': 4, 'g': 2, 'h': 4, 'i': 1, 'j': 8, 'k': 5, 'l': 1, 'm': 3, 'n': 1,
+    'o': 1, 'p': 3, 'q': 10, 'r': 1, 's': 1, 't': 1, 'u': 1, 'v': 4, 'w': 4, 'x': 8, 'y': 4, 'z': 10
+}
+
+new_dic = []
+
+
+def getWordScore(word, n):
+    for e in word:
+        if e in SCRABBLE_LETTER_VALUES.keys():
+            new_dic.append(SCRABBLE_LETTER_VALUES[e])
+
+    if len(word) == n:
+        print((sum(new_dic) * len(word)) + 50)
+    else:
+        print(new_dic)
+        print(sum(new_dic) * len(word))
+
+
+#getWordScore("bac", HAND_SIZE)
+getWordScore("triplet", 8)
