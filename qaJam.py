@@ -18,6 +18,7 @@ xpaths = { 'e-mail' : "//input[@name='username']",
            'submit' : "//input[@type='submit']"
           }
 
+
 mydriver = webdriver.Chrome()
 mydriver.get(baseurl)
 mydriver.maximize_window()
