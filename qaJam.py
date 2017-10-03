@@ -31,7 +31,3 @@ mydriver.find_element_by_class_name('one-log-bt').click()
 #time.sleep(5)
 
 
-#selenium.clickAt("symbolLookupLink","1382,10");		 #  //вызываем твоё окно
-#selenium.selectWindow("mywindow");				  # //переключаем фокус на открытое окно
-#selenium.type(mydriver.find_element_by_xpath('//*[@name="Password"]'));			 #  //заполняем форму
-#selenium.selectWindow(null);										#//возвращаем фокус на главное окно
